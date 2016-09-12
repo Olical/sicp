@@ -2,7 +2,7 @@
 
 My work from studying [Structure and Interpretation of Computer Programs][sicp]. I use [Racket][] as my Scheme implementation.
 
-You'll need to fetch the `sicp` package before executing these exercises.
+You'll need to fetch the `sicp` package before executing these exercises, although they don't usually do much. Just open the files and have a read.
 
 ```bash
 raco pkg install sicp
