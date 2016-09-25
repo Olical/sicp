@@ -9,7 +9,7 @@
 	(else (ack (- x 1)
 		   (ack x (- y 1))))))
 
-; I have to work out what the following calls give me.
-; (ack 1 10)
-; (ack 2 4)
-; (ack 3 3)
+; Just have to see the results of these.
+(ack 1 10)
+(ack 2 4)
+(ack 3 3)
