@@ -6,7 +6,7 @@ You'll need to fetch the `sicp` package before executing these exercises, althou
 
 ```bash
 raco pkg install sicp
-racket exercises/1.1.rkt
+racket ex/1/1.rkt
 ```
 
 ## Author
