@@ -16,6 +16,8 @@
     (+ (pascal (- row 1) (- col 1))
        (pascal (- row 1) col))))
 
+; Thought I'd define a little test function, works well.
+; I'd prefer it to be a macro, just haven't read about them yet.
 (define (t? e a)
   (display (if (= e a) "✓" "✗"))
   (display (string-append " (= " (number->string e) " " (number->string a) ")\n")))
