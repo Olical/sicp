@@ -11,10 +11,10 @@
 ; 1 4 6 4 1
 
 (define (pascal row col)
-  (if (or (= row col) (= col 0))
-    1
-    (+ (pascal (- row 1) col)
-       (pascal (- row 1) (- 1 col)))))
+  (if
+    (or (= col 0) (= row col)) 1
+    (+ (pascal (- row 1) (- col 1))
+       (pascal (- row 1) col))))
 
 (define (t? e a)
   (display (if (= e a) "✓" "✗"))
