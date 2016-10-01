@@ -111,3 +111,8 @@
       0)))
 
 ; So there are four hits.
+; Now for the running time and resources.
+; Space is O(n) because the space is proportional to the depth and the depth is proportional to the amount.
+; The steps are proportional to the number of coins used and n. I couldn't prove this, I'm not sure how, but I found other explanations of it online.
+; Yes it's cheating, but I'd rather have a go at these exercises and have someone explain the more mathy parts to me than skip them entirely.
+; So steps is O(n^5) where there are five coin types.
