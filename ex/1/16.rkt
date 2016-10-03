@@ -32,16 +32,12 @@
   (fast-expt-iter b n 1))
 
 (define (fast-expt-iter b n a)
-  (if (= n 0)
-    a
-    (fast-expt-iter b
-                    (if (even? n)
-                      (/ n 2)
-                      (- n 1))
-                    (if (even? n)
-                      (square a)
-                      (* b a)))))
+  (cond ((= n 0) a)
+        ((even? n) (fast-expt-iter (square b) (/ n 2) a))
+        (else (fast-expt-iter b (- n 1) (* b a)))))
 
 ; And they match :D
 (book-fast-expt 5 5) ; 3125
+(book-fast-expt 2 8) ; 256
 (fast-expt 5 5) ; 3125
+(fast-expt 2 8) ; 2
