@@ -10,20 +10,32 @@
 ; 2821
 ; 6601
 
-(define (carmichael? n)
-  (define (loop n a)
-    (if (= a 0)
-      true
-      (if (= (remainder (expt a n) n)
-             (remainder a n))
-        (loop n (- a 1))
-        false)))
-  (loop n n))
+(define (square n)
+  (* n n))
 
-(carmichael? 20) ; This is not a Carmichael number.
-(carmichael? 561) ; The rest are.
-(carmichael? 1105)
-(carmichael? 1729)
-(carmichael? 2465)
-(carmichael? 2821)
-(carmichael? 6601)
+(define (fermat? n a)
+  (= (expmod a n n) a))
+
+(define (expmod base exp m)
+  (cond ((= exp 0) 1)
+        ((even? exp)
+         (remainder (square (expmod base (/ exp 2) m))
+                    m))
+        (else
+          (remainder (* base (expmod base (- exp 1) m))
+                     m))))
+
+(define (fermat-all n)
+  (define (iter a)
+    (cond ((= a 1) true)
+          ((not (fermat? n a)) false)
+          (else (iter (- a 1)))))
+  (iter (- n 1)))
+
+(fermat-all 20) ; This is not a Carmichael number.
+(fermat-all 561) ; The rest are.
+(fermat-all 1105)
+(fermat-all 1729)
+(fermat-all 2465)
+(fermat-all 2821)
+(fermat-all 6601)
