@@ -1,12 +1,11 @@
 # SICP
 
-My work from studying [Structure and Interpretation of Computer Programs][sicp]. I use [Racket][] as my Scheme implementation.
+My work from studying [Structure and Interpretation of Computer Programs][sicp]. I use [mit-scheme][].
 
-You'll need to fetch the `sicp` package before executing these exercises, although they don't usually do much. Just open the files and have a read.
+You can execute the exercises with the following.
 
 ```bash
-raco pkg install sicp
-racket ex/1/1.rkt
+mit-scheme --load exercises/1.1.scm
 ```
 
 ## Author
@@ -27,4 +26,4 @@ Do what you want. Learn as much as you can. Unlicense more software.
 [author-site]: http://oli.me.uk/
 [author-twitter]: https://twitter.com/OliverCaldwell
 [sicp]: https://mitpress.mit.edu/sicp/
-[racket]: https://racket-lang.org/
+[mit-scheme]: https://www.gnu.org/software/mit-scheme/
