@@ -5,7 +5,7 @@ My work from studying [Structure and Interpretation of Computer Programs][sicp].
 You can execute the exercises with the following.
 
 ```bash
-mit-scheme --load foo.scm
+mit-scheme --load 1-1.1.scm
 ```
 
 [sicp]: https://mitpress.mit.edu/sicp/
