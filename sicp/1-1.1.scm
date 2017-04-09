@@ -1,10 +1,13 @@
-;; Simply work out what each expression resolves to.
+;; Q: What is the result of each expression?
 
 10
 ;; => 10
 
 (+ 5 3 4)
 ;; => 12
+
+(- 9 1)
+;; => 8
 
 (/ 6 2)
 ;; => 3
@@ -13,10 +16,10 @@
 ;; => 6
 
 (define a 3)
-;; => Unspecified
+;; => #<unspecified>
 
 (define b (+ a 1))
-;; => Unspecified
+;; => #<unspecified>
 
 (+ a b (* a b))
 ;; => 19
