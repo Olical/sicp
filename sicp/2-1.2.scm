@@ -1,4 +1,4 @@
-;; Q: Translate the follow into previx form.
+;; Q: Translate the follow into prefix form.
 
 ;; 5 + 4 + (2 - (3 - (6 + 4/5)))
 ;; -----------------------------
