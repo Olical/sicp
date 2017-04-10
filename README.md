@@ -1,8 +1,8 @@
-# Computer Science
-
-A place to store my work with regards to various computer science books, courses and challenges.
+# SICP
 
 > Warning: Contains dangerous levels of Lisp.
+
+My work from studying [Structure and Interpretation of Computer Programs][sicp]. I use [mit-scheme][].
 
 ## Author
 
@@ -21,3 +21,5 @@ Do what you want. Learn as much as you can. Unlicense more software.
 [unlicense]: http://unlicense.org/
 [author-site]: http://oli.me.uk/
 [author-twitter]: https://twitter.com/OliverCaldwell
+[sicp]: https://mitpress.mit.edu/sicp/
+[mit-scheme]: https://www.gnu.org/software/mit-scheme/
