@@ -16,10 +16,10 @@
 ;; => 6
 
 (define a 3)
-;; => #<unspecified>
+;; => a
 
 (define b (+ a 1))
-;; => #<unspecified>
+;; => b
 
 (+ a b (* a b))
 ;; => 19
