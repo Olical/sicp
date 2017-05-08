@@ -24,14 +24,7 @@
 
 (count-change 100) ;; 292
 
-;; Here's the tree for 11 cents.
-
-----
-
-                         11,5
-                   11,4         -39,5
-             11,3       -14,4     =0
-        11,2       1,3
-    11,1
-11,0
- =0
+;; I roughly drew this tree out, it's in images/counting-change.jpg
+;; Space usage is O(n) because the depth of the tree is determined by the inputs.
+;; Steps were harder, I originally assumed O(n^2) because each node splits into two, but that's not right.
+;; It's really O(n^c) where c is the number of coins. So for this one, it is O(n^5)
