@@ -9,10 +9,12 @@
 ;; => 2176782336
 
 (define (fast-expt b n)
-  (define (loop b n a)
+  (define (loop n a)
     (if (<= n 0)
         a
-        (loop b (- n 1) (* b a))))
-  (loop b n 1))
+        (if (even? n)
+          (loop (/ n 2) (square a))
+          (loop (- n 1) (* a b)))))
+  (loop n 1))
 
 (fast-expt 6 12)
