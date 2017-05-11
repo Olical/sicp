@@ -1,7 +1,7 @@
 ;; Q: Design a logarithmic multiplication procedure using halve and double.
 
 (define (double x)
-  (* x 2))
+  (+ x x))
 
 (define (halve x)
   (/ x 2))
