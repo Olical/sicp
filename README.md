@@ -1,7 +1,5 @@
 # SICP
 
-> Warning: Contains dangerous levels of Lisp.
-
 My work from studying [Structure and Interpretation of Computer Programs][sicp]. I use [mit-scheme][].
 
 ## Author
