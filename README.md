@@ -17,7 +17,7 @@ Find the full [unlicense][] in the `UNLICENSE` file, but here's a snippet.
 Do what you want. Learn as much as you can. Unlicense more software.
 
 [unlicense]: http://unlicense.org/
-[author-site]: http://oli.me.uk/
+[author-site]: https://oli.me.uk/
 [author-twitter]: https://twitter.com/OliverCaldwell
 [sicp]: https://mitpress.mit.edu/sicp/
 [mit-scheme]: https://www.gnu.org/software/mit-scheme/
