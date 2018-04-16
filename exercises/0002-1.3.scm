@@ -10,4 +10,4 @@
     (apply + (map square (take (sort xs >) 2))))
 
   (sum-square-largest-2 10 5 20))
-;; =>
+;; => 500
