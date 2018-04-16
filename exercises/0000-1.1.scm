@@ -1,4 +1,4 @@
-;; Given a bunch of expressions, work out what they result in.
+;; Given a bunch of expressions, work out what they evaluate to.
 
 10
 ;; => 10
