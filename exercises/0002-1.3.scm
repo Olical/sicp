@@ -2,12 +2,11 @@
 ;; and returns the sum of the squares of the two larger
 ;; numbers.
 
-(begin
-  (define (square n)
-    (* n n))
+(define (square n)
+  (* n n))
 
-  (define (sum-square-largest-2 . xs)
-    (apply + (map square (take (sort xs >) 2))))
+(define (sum-square-largest-2 . xs)
+  (apply + (map square (take (sort xs >) 2))))
 
-  (sum-square-largest-2 10 5 20))
+(sum-square-largest-2 10 5 20)
 ;; => 500
