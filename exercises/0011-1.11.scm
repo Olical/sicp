@@ -4,10 +4,24 @@
 ;; an iterative process.
 
 (define (fr n)
-  (cond ((< n 3) n)
-        (else (+ (fr (- n 1))
-                 (* 2 (fr (- n 2)))
-                 (* 3 (fr (- n 3)))))))
+  (if (< n 3)
+    n
+    (+ (fr (- n 1))
+       (* 2 (fr (- n 2)))
+       (* 3 (fr (- n 3))))))
 
 (fr 10)
 ;; => 1892
+
+(define (fi n)
+  (define (loop acc x y z)
+    (if (< x 3)
+      acc
+      (let ((x (- x 1))
+            (y (- y 2))
+            (z (- z 3)))
+        (loop (+ acc x (* 2 y) (* 3 z)) x y z))))
+  (loop 0 n n n))
+
+(fi 10)
+;; =>
