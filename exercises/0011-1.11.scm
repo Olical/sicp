@@ -14,14 +14,11 @@
 ;; => 1892
 
 (define (fi n)
-  (define (loop acc x y z)
-    (if (< x 3)
-      acc
-      (let ((x (- x 1))
-            (y (- y 2))
-            (z (- z 3)))
-        (loop (+ acc x (* 2 y) (* 3 z)) x y z))))
-  (loop 0 n n n))
+  (define (loop n x y z)
+    (if (= n 0)
+      x
+      (loop (- n 1) y z (+ z (* 2 y) (* 3 x)))))
+  (loop n 0 1 2))
 
 (fi 10)
-;; =>
+;; => 1892
