@@ -4,8 +4,9 @@
 
 ;; So let's define the given constants:
 
-(define phi (/ (+ 1 (sqrt 5)) 2))
-(define psy (/ (- 1 (sqrt 5)) 2))
+(define /5 (sqrt 5))
+(define phi (/ (+ 1 /5) 2))
+(define psy (/ (- 1 /5) 2))
 
 ;; And a fib function:
 
@@ -21,8 +22,9 @@
 (fib 8)
 ;; => 21
 
-(/ (expt phi 8)
-   (sqrt 5))
+(/ (expt phi 8) /5)
 ;; => 21.00951949424901
 
 ;; Pretty damn cool. So now I need to prove this is the same for all n:
+
+; fib(n+1) = fib(n) + fib(n-1)
